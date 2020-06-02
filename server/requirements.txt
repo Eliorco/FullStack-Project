@@ -1,0 +1,15 @@
+cffi
+click
+cryptography
+Flask
+Flask-Cors
+Flask-SQLAlchemy
+itsdangerous
+Jinja2
+MarkupSafe
+pycparser
+PyJWT
+pymongo
+six
+SQLAlchemy
+Werkzeug

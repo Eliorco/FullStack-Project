@@ -115,7 +115,7 @@ export default {
       }
     },
     getMessage() {
-      const path = 'http://localhost:5000/api/get_all';
+      const path = '/api/get_all';
       this.isAuthenticate();
       const config = {
         headers: {
@@ -134,7 +134,7 @@ export default {
         });
     },
     newMessage(payload) {
-      const path = 'http://localhost:5000/api/write_message';
+      const path = '/api/write_message';
       this.isAuthenticate();
       const config = {
         headers: {
@@ -175,7 +175,7 @@ export default {
       this.initForm();
     },
     removeMessage(msgID) {
-      const path = `http://localhost:5000/api/delete_message/${msgID}`;
+      const path = `/api/delete_message/${msgID}`;
       this.isAuthenticate();
       const config = {
         headers: {

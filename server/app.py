@@ -14,6 +14,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 CORS(app)
 
+
 # ### models ### #
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -47,6 +48,7 @@ class Message(db.Model):
 
     def __repr__(self):
         return f"Message('{self.title}', '{self.msg_id}', '{self.receiver}')"
+
 
 # ### utils ### #
 response_template = {
